@@ -1,2 +1,4 @@
 #Para saber que perfifericos tenemos utilizamos este comando 
 lsfci-nn (se puede observar todos los perifericos)
+#Para desactivar Firewall de windows en ServerCore-Master
+netsh advfirewall setdomainprofile state off (desactivar Firewall en windows Modo Core)
