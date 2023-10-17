@@ -16,3 +16,5 @@
   -NoRebootOnCompletion:$false`
   -SysvolPath "C:\Windows\SYSVOL"`
   -Force:$true
+#Para comprobar realciones de confianza en vía Powershell
+  Nltest /DOMAIN_TRUSTS
