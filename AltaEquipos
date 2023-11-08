@@ -38,8 +38,4 @@
 }
 
 
-#Primero comprobaremos si se tiene cargado el módulo Active Directory
-if (!(Get-Module -Name ActiveDirectory)) #Accederá al then solo si no existe una entrada llamada ActiveDirectory
-{
-  Import-Module ActiveDirectory #Se carga el módulo
-}
+
