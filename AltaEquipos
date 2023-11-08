@@ -1,6 +1,7 @@
+$domain="dc=Provincial,dc=mylocal"
 {
 	$fileUsersCsv=Read-Host "Introduce el fichero csv de los usuarios:"
-	$ficheroImportado = import-csv -Path $fileUsersCsv -Delimiter : 				     
+	$ficheroImportado = import-csv -Path $fileUsersCsv -Delimiter $ 				     
 	foreach($linea in $ficheroImportado)
 	{
 		$passAccount=ConvertTo-SecureString $linea.DNI -AsPlainText -force
